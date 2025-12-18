@@ -1,5 +1,18 @@
 # IIIVmrMLM.QEI
 
+Please use the below codes when downloading and installing the IIIVmrMLM.QEI software (2025-12-18):
+
+options(timeout = 600) # To stop after 600 seconds #
+
+download.file("https://github.com/YuanmingZhang65/IIIVmrMLM.QEI/raw/main/IIIVmrMLM.QEI_1.0.zip", "IIIVmrMLM.QEI_1.0.zip", mode = "wb")   # The 1st method for downloading software #
+
+download.file("https://cdn.jsdelivr.net/gh/YuanmingZhang65/IIIVmrMLM.QEI@main/IIIVmrMLM.QEI_1.0.zip", "IIIVmrMLM.QEI_1.0.zip", mode = "wb")    # The 2nd method for downloading software #
+
+install.packages("IIIVmrMLM.QEI_1.0.zip",repos = NULL) # To install software #
+
+library(IIIVmrMLM.QEI) # To import the software #
+
+
 3VmrMLM-MEJA in the IIIVmrMLM software is used to associate trait phenotypes in multi-environments with marker genotypes for directly identifying QTNs and QEIs, while 3VmrMLM-random and 3VmrMLM-fixed (single data analysis) in current software is used to associate indirect indicators with marker genotypes for indirectly idnetifying QEIs.
 
 The indirect indicators include trait differences, regression intercept and slope (coefficient) of trait phenotypes on environmental index, regression intercept and slope of trait phenotypes on environmental factor (such as meteorological factors, i.e., temperature, treatmental levels, soil fertilizer content, and other environmental conditions), and environmental variation indicators (range, variance, standard deviation, and coefficient of variation) as phenotypes.
